@@ -40,4 +40,12 @@ public class Hero extends BaseEntity {
     @OneToOne()
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
